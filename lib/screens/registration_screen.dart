@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../user_models.dart';
 import 'home_screen.dart';
+import 'package:in_my_lane/widgets/background_scaffold.dart';
 
 class RegistrationScreen extends StatefulWidget {
   @override
@@ -32,7 +33,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BackgroundScaffold(
+      title: 'Registration Screen',
       appBar: AppBar(title: Text('Register')),
       body: Padding(
         padding: EdgeInsets.all(16.0),

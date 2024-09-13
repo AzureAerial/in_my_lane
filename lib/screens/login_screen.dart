@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
+import '../widgets/background_scaffold.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -27,7 +28,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BackgroundScaffold(
+      title: 'Login',
       appBar: AppBar(
         title: Text('In My Lane'),
       ),
@@ -37,7 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'assets/image.png',  // Ensure this matches your file path
+              'assets/logolady.png',  // Ensure this matches your file path
               width: 200,
               height: 200,
             ),

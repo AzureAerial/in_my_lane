@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../user_models.dart';
 import '../user_preferences.dart';
+import 'package:in_my_lane/widgets/background_scaffold.dart';
 
 class StudentDashboard extends StatelessWidget {
   final Student student;
@@ -9,7 +10,8 @@ class StudentDashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BackgroundScaffold(
+      title: 'Student Dashboard',
       appBar: AppBar(
         title: Text('My Progress - ${student.name}'),
       ),

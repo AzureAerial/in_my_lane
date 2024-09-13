@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:in_my_lane/widgets/background_scaffold.dart';
 
 class FlashcardsScreen extends StatefulWidget {
   @override
@@ -42,7 +43,8 @@ class _FlashcardsScreenState extends State<FlashcardsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BackgroundScaffold(
+      title: 'Flashcards',
       appBar: AppBar(
         title: Text('Flashcards'),
       ),
@@ -62,7 +64,7 @@ class _FlashcardsScreenState extends State<FlashcardsScreen> {
               if (_showAnswer)
                 Text(
                   _flashcards[_currentIndex]['answer']!,
-                  style: TextStyle(fontSize: 20, color: Colors.blue),
+                  style: TextStyle(fontSize: 20, color: const Color.fromARGB(255, 255, 255, 255)),
                   textAlign: TextAlign.center,
                 ),
               SizedBox(height: 20),

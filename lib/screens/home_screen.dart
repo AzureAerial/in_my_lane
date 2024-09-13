@@ -1,25 +1,27 @@
 import 'package:flutter/material.dart';
 import 'log_drive_screen.dart';
 import 'study_materials_screen.dart';
-import 'view_progress_screen.dart'; // Make sure to create and import this screen
+import 'view_progress_screen.dart';
+import '../widgets/background_scaffold.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BackgroundScaffold(
+      title: 'In My Lane',
       appBar: AppBar(
-        title: Text('In My Lane'),
+        title: Text('In My Lane'),  // Add an AppBar here
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Image.asset(
-              'assets/image.png',  // Make sure this matches your working image path
+              'assets/logolady.png',  // Your image path
               width: 200,
               height: 200,
             ),
-            SizedBox(height: 20),  // Space between image and buttons
+            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -39,7 +41,7 @@ class HomeScreen extends StatelessWidget {
               },
               child: Text('Study Materials'),
             ),
-            SizedBox(height: 20),  // Space between buttons
+            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
