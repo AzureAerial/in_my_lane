@@ -1,16 +1,25 @@
-# in_my_lane
+# In My Lane App
 
-A new Flutter project.
+A Flutter app designed to help student drivers log their driving sessions, track progress, and access study materials.
 
-## Getting Started
+## Features:
+- **Log Drive Time**: Track day and night driving sessions.
+- **Progress Tracking**: View your total drive time and night drive time progress.
+- **Study Materials**: Take quizzes, study flashcards, and review driving rules.
+- **Quizzes**: Test your knowledge with general knowledge and road signs quizzes.
 
-This project is a starting point for a Flutter application.
+## How to Use:
+1. Clone the repository: `git clone https://github.com/AzureAerial/Inmylaneapp.git`
+2. Open the project in your preferred editor (like VSCode or Android Studio).
+3. Run `flutter pub get` to install the dependencies.
+4. Use `flutter run` to test the app on your local machine or emulator.
 
-A few resources to get you started if this is your first Flutter project:
+## How to Build for Web:
+1. Run `flutter build web`.
+2. Deploy the contents of `build/web` to your preferred web host (GitHub Pages, etc.).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Demo
+[Add a link to the live demo once deployed]
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## License
+[Add a license if applicable]
