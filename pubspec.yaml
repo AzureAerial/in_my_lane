@@ -11,6 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.0.20
   shared_preferences: ^2.0.7
   cupertino_icons: ^1.0.8
 
@@ -21,6 +22,6 @@ dev_dependencies:
 
 flutter:
   assets:
-     - assets/image.png
-
+     - assets/logolady.png
+     - assets/background.png
 

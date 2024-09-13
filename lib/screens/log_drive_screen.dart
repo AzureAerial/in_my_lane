@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../widgets/background_scaffold.dart';
 
 class LogDriveScreen extends StatefulWidget {
   @override
@@ -68,7 +69,8 @@ class _LogDriveScreenState extends State<LogDriveScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BackgroundScaffold(
+      title: 'Log Drive Time',  // Title moved to be above the appBar
       appBar: AppBar(
         title: const Text('Log Drive Time'),
       ),
@@ -127,14 +129,14 @@ class _LogDriveScreenState extends State<LogDriveScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            Text('Total Hours: ${totalHours.toStringAsFixed(2)}/30'),
+            Text('Total Hours: ${totalHours.toStringAsFixed(2)}/60'),
             LinearProgressIndicator(
-              value: totalHours / 30,
+              value: totalHours / 60,
             ),
             const SizedBox(height: 10),
-            Text('Night Hours: ${nightHours.toStringAsFixed(2)}/2'),
+            Text('Night Hours: ${nightHours.toStringAsFixed(2)}/10'),
             LinearProgressIndicator(
-              value: nightHours / 2,
+              value: nightHours / 10,
             ),
           ],
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/background_scaffold.dart';
 
 class DrivingRulesScreen extends StatelessWidget {
   final List<Map<String, String>> _rules = [
@@ -66,7 +67,8 @@ class DrivingRulesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BackgroundScaffold(
+      title: 'Driving Rules & Guidelines',
       appBar: AppBar(
         title: Text('Driving Rules & Guidelines'),
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:in_my_lane/widgets/background_scaffold.dart';
 
 class ViewProgressScreen extends StatefulWidget {
   @override
@@ -28,7 +29,8 @@ class _ViewProgressScreenState extends State<ViewProgressScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return BackgroundScaffold(
+      title: 'View Progress',
       appBar: AppBar(
         title: Text('My Progress'),
       ),
